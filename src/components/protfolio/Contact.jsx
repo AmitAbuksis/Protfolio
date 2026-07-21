@@ -74,7 +74,7 @@ export const Contact = () => {
           {/* Download CV — spinning conic-gradient border */}
           <div className="mt-10">
             <a
-              href="https://media.base44.com/files/public/6a5e165b560695a3b654e95d/a5b0e9527_AmitAbuksisCV.pdf"
+              href="https://res.cloudinary.com/dep28cdpr/image/upload/v1784635767/Amit_Abuksis_CV_n8zgtd.pdf"
               download
               target="_blank"
               aria-label="Download Amit's CV in PDF format"

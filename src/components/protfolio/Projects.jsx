@@ -10,7 +10,7 @@ const PROJECTS = [
     description:
       "Designed and implemented critical features in Wix's purchase and management flows. Owned performance optimization of the most impactful parts of the purchase flow, directly affecting company-wide KPIs.",
     stack: ["React", "TypeScript", "NestJS", "Node.js"],
-    image: "https://media.base44.com/images/public/6a5e165b560695a3b654e95d/5d0158295_generated_image.png",
+    image: "https://res.cloudinary.com/dep28cdpr/image/upload/v1784635710/projects_1_ehiluy.jpg",
     metric: "Company-wide KPIs",
   },
   {
@@ -19,7 +19,7 @@ const PROJECTS = [
     description:
       "Led a 4-person agile team to architect and deliver several end-to-end insurance domain applications for Harel Group — from React frontends to Java microservices on AWS.",
     stack: ["React", "Redux", "Node.js", "Java", "AWS", "Kubernetes"],
-    image: "https://media.base44.com/images/public/6a5e165b560695a3b654e95d/35d08337d_generated_image.png",
+    image: "https://res.cloudinary.com/dep28cdpr/image/upload/v1784635708/projects_2_xvpda8.jpg",
     metric: "4-person team lead",
   },
   {
@@ -28,7 +28,7 @@ const PROJECTS = [
     description:
       "A vehicle fleet management system built for the company responsible for Shufersal Online shipments. Full-stack platform covering client-side interactivity, Node.js server, and MongoDB data layer.",
     stack: ["JavaScript", "Node.js", "MongoDB", "jQuery"],
-    image: "https://media.base44.com/images/public/6a5e165b560695a3b654e95d/7653a3486_generated_image.png",
+    image: "https://res.cloudinary.com/dep28cdpr/image/upload/v1784635709/projects_3_il3wfn.jpg",
     metric: "Shufersal Online",
   },
 ];
