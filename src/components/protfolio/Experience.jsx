@@ -3,8 +3,21 @@ import { SectionLabel } from "./SectionLabel";
 
 const EXPERIENCE = [
   {
+    company: "Check Point Software Technologies",
+    period: "2024 — Present",
+    role: "Senior Software Engineer",
+    summary:
+      "Leading the frontend development of Check Point's next-generation security products, driving architecture decisions, tooling, and frontend best practices across the team.",
+    points: [
+      "Lead the frontend part of the team — owning architecture, code quality, and delivery",
+      "Mentor frontend engineers and establish shared patterns, component libraries, and review standards",
+      "Collaborate with product, design, and backend to ship secure, high-performance web experiences",
+    ],
+    stack: ["React", "TypeScript", "Node.js", "Redux", "Webpack", "Jest", "SCSS", "CI/CD"],
+  },
+  {
     company: "Wix",
-    period: "2021 — Present",
+    period: "2021 — 2024",
     role: "Senior Full Stack Developer",
     summary:
       "Designing and implementing critical features in Wix's purchase and management flows, owning performance optimization of the most impactful parts of the purchase flow.",

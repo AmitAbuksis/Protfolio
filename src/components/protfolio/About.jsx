@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
 
-export const About = () => {
+export default function About() {
   return (
     <section id="about" className="relative mx-auto max-w-7xl px-6 py-32">
       <SectionLabel index="01" title="Biography" />
@@ -29,11 +29,16 @@ export const About = () => {
           style={{ boxShadow: "inset 0 1px 0 0 rgba(255,255,255,0.08), 0 20px 60px -20px rgba(0,0,0,0.5)" }}
         >
           <p className="text-lg font-light leading-relaxed text-white/80">
-            As a Full Stack Developer with over <span className="font-medium text-white">8 years of experience</span>,
+            As a Senior Software Engineer with over <span className="font-medium text-white">8 years of experience</span>,
             I specialize in designing, developing, and implementing applications using a diverse set of
             technologies and programming languages. My expertise lies in{" "}
             <span className="font-medium text-[#00F5FF]">React</span> for front-end development and{" "}
             <span className="font-medium text-[#00F5FF]">Node.js</span> for back-end.
+          </p>
+          <p className="mt-5 text-lg font-light leading-relaxed text-white/70">
+            I currently lead the frontend part of the team at Check Point Software Technologies, driving
+            architecture, code quality, and delivery across security products. Previously I shipped
+            high-impact features at Wix and led an agile team at Harel Insurance.
           </p>
           <p className="mt-5 text-lg font-light leading-relaxed text-white/70">
             Additionally, I serve as a lecturer for Node.js and React, focusing on practical projects
@@ -44,7 +49,7 @@ export const About = () => {
           <div className="mt-8 flex flex-wrap gap-3">
             {[
               { k: "Experience", v: "8+ years" },
-              { k: "Current", v: "Wix" },
+              { k: "Current", v: "Check Point" },
               { k: "Focus", v: "React / Node.js" },
             ].map((item) => (
               <div
