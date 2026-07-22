@@ -1,7 +1,9 @@
+import { lazy } from "react";
 import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import NeuralMesh from "./NeuralMesh";
+
+const NeuralMesh = lazy(() => import("./NeuralMesh"));
 
 export const Hero = () => {
   const scrollTo = (href) => {

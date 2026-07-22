@@ -1,7 +1,9 @@
+import { lazy } from "react";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
 import { SectionLabel } from "./SectionLabel";
-import SkillCloud from "./SkillCloud";
+
+const SkillCloud = lazy(() => import("./SkillCloud"));
 
 const PROFICIENT = [
   { name: "JavaScript (ES6)", level: "Proficient" },

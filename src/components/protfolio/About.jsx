@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
 
-export default function About() {
+export const About = () => {
   return (
     <section id="about" className="relative mx-auto max-w-7xl px-6 py-32">
       <SectionLabel index="01" title="Biography" />

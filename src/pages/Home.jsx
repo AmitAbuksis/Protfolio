@@ -1,4 +1,4 @@
-import { Navbar } from "../components/protfolio/NavBar";
+import { Navbar } from "../components/protfolio/Navbar";
 import { Hero } from "../components/protfolio/Hero";
 import { About } from "../components/protfolio/About";
 import { Experience } from "../components/protfolio/Experience";
