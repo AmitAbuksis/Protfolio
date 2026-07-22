@@ -86,44 +86,25 @@ const buildCloudinaryUrl = (parsed, options) => {
     width,
     height,
     crop,
-    focalPoint,
-    quality,
   } = options
 
-  const transforms = []
+    const transforms = [
+        crop ? "c_fill" : "c_fit",
+        `w_${clampDim(width)}`,
+        height ? `h_${clampDim(height)}` : null,
+        "f_auto",
+        "q_auto"
+    ].filter(Boolean)
 
-  transforms.push(crop ? "c_fill" : "c_fit")
-
-  transforms.push(`w_${clampDim(width)}`)
-
-  if (height) {
-    transforms.push(`h_${clampDim(height)}`)
-  }
-
-  transforms.push("f_auto")
-
-  transforms.push("q_auto")
-
-  if (quality !== undefined) {
-    transforms.push(`q_${quality}`)
-  }
-
-  if (crop && focalPoint) {
-    transforms.push(
-      `g_xy_center`,
-      `x_${Math.round((focalPoint.x - 0.5) * 1000)}`,
-      `y_${Math.round((focalPoint.y - 0.5) * 1000)}`
-    )
-  }
-
-  return [
-    parsed.origin,
-    "image",
-    "upload",
-    transforms.join(","),
-    parsed.version,
-    parsed.publicId,
-  ].join("/")
+    return [
+        parsed.origin,
+        parsed.cloudName,
+        "image",
+        "upload",
+        transforms.join(","),
+        parsed.version,
+        parsed.publicId,
+    ].join("/")
 }
 
 const buildFramerUrl = (parsed, options) => {
