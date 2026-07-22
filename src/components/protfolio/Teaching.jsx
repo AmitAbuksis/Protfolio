@@ -8,6 +8,7 @@ const COURSES = [
   { name: "Node.js", level: "Backend" },
   { name: "Angular", level: "Frontend" },
   { name: "JavaScript (ES6)", level: "Core" },
+  { name: "Software Architecture", level: "Core" },
 ];
 
 const INSTITUTIONS = [
