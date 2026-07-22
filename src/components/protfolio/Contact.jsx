@@ -29,7 +29,7 @@ const CONTACTS = [
 export const Contact = () => {
   return (
     <section id="contact" className="relative mx-auto max-w-7xl px-6 py-32">
-      <SectionLabel index="06" title="Connect" />
+      <SectionLabel index="07" title="Connect" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -77,6 +77,7 @@ export const Contact = () => {
               href="https://res.cloudinary.com/dep28cdpr/image/upload/v1784635767/Amit_Abuksis_CV_n8zgtd.pdf"
               download
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Download Amit's CV in PDF format"
               className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full p-[2px] transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00F5FF] focus-visible:ring-offset-4 focus-visible:ring-offset-[#060214]"
             >

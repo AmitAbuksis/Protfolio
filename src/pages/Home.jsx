@@ -6,6 +6,7 @@ import { Projects } from "../components/protfolio/Projects";
 import { Skills } from "../components/protfolio/Skills";
 import { Education } from "../components/protfolio/Education";
 import { Contact } from "../components/protfolio/Contact";
+import { Teaching } from "../components/protfolio/Teaching";
 
 export const Home = () => {
 
@@ -26,6 +27,7 @@ export const Home = () => {
         <Projects />
         <Skills />
         <Education />
+        <Teaching />
         <Contact />
       </main>
     </div>
