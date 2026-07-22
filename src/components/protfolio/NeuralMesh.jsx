@@ -91,8 +91,10 @@ const NeuralMesh = () => {
     window.addEventListener("mousemove", onMove);
 
     let raf;
+    let visible = true;
     const animate = () => {
       raf = requestAnimationFrame(animate);
+      if (!visible) return;
       if (!reduceMotion) {
         group.rotation.y += 0.0008;
         group.rotation.x += 0.0003;
@@ -105,6 +107,16 @@ const NeuralMesh = () => {
     };
     animate();
 
+    // Pause rendering when the hero scrolls out of view — frees the main thread
+    // on mobile and avoids burning CPU/GPU on an off-screen canvas.
+    const observer = new IntersectionObserver(
+      (entries) => {
+        visible = entries[0].isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    observer.observe(mount);
+
     const onResize = () => {
       if (!mount) return;
       camera.aspect = mount.clientWidth / mount.clientHeight;
@@ -115,6 +127,7 @@ const NeuralMesh = () => {
 
     return () => {
       cancelAnimationFrame(raf);
+      observer.disconnect();
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("resize", onResize);
       mount.removeChild(renderer.domElement);
